@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Ki Society</title>
+</head>
+
+<body>
+    <main class="wrapper">
+        <header class="align-items-center d-flex header justify-content-between">
+            <div class="align-items-center brand d-flex">
+                <a href="index.html"><img src="images/logo.png" alt=""></a><span class="text">Ki Society</span>
+            </div>
+            <div class="navlink">
+                <ul class="nav">
+                    <li><a href="admin-login.html">(Admin)</a></li>
+                    <li><a href="#">Membership Cards</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="wrap">
+            <div class="ki-box mb-4">
+                <div class="container-xxl px-xxl-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="mb-5 text-uppercase">ORDER MEMBERSHIP CARDS FOR YOUR ORGANIZATION</h2>
+                            <form class="form-ki">
+                                <div class="row mb-3">
+                                    <label for="country" class="col-form-label col-sm-4 text-uppercase">COUNTRY:</label>
+                                    <div class="col-sm-5">
+                                        <select id="country" class="form-select">
+                                        <option selected="">Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="organize" class="col-form-label col-sm-4 text-uppercase">ORGANIZATION:</label>
+                                    <div class="col-sm-5">
+                                        <select id="organize" class="form-select">
+                                            <option selected="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="suborg" class="col-form-label col-sm-4 text-uppercase">SUB ORG:</label>
+                                    <div class="col-sm-5">
+                                        <select id="suborg" class="form-select">
+                                            <option selected="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="ship" class="col-form-label col-sm-4 text-uppercase">SHIP TO:</label>
+                                    <div class="col-sm-5">
+                                        <select id="ship" class="form-select">
+                                            <option selected="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="invoice" class="col-form-label col-sm-4 text-uppercase">INVOICE:</label>
+                                    <div class="col-sm-5">
+                                        <select id="invoice" class="form-select">
+                                            <option selected="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/card.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-ki">
+                <div class="tab-head">
+                    <ul class="nav">
+                        <li class="active" data-tab="so">SMALL ORDERS</li>
+                        <li data-tab="lbo">LARGE BATCH ORDERS</li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="box" data-tab="so">
+                        <h2>ORDER INDIVIDUAL OR REPLACEMENT CARDS</h2>
+                        <p>Use this tool to order small amounts of cards for new members or to replace lost cards.</p>
+                        <p>Click “Add Card” to add a membership card to your order.<br> When you are ready, click ORDER CARDS. You will receive a confirmation email.</p>
+                    </div>
+                    <div class="add-card mt-5">
+                        <a href="add-card.html" class="cta">Add Card</a>
+                    </div>
+                    <div class="table-wrap">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="heading">
+                                <th width="21%">MEMBER</th>
+                                <th width="25%">CARD TYPE</th>
+                                <th width="37%">HOME DOJO</th>
+                                <th width="17%">&nbsp;</th>
+                            </tr>
+                        </table>
+                        <div class="add-card-note text-center text-uppercase mt-5 py-5">
+                            <h2>To begin your order, click “ADD CARD”</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-center">&copy;2021 Shinshin Toitsu Aikido All rights reserved.</footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

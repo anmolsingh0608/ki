@@ -1,0 +1,9 @@
+@import 'fonts';
+@import 'header';
+@import 'view';
+@import 'footer';
+.wrapper {
+    border: 1px solid #efefef;
+    margin: 0 auto;
+    max-width: 1280px;
+}

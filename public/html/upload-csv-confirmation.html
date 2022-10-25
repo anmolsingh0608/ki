@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Ki Society - Upload CSV Confirmation</title>
+</head>
+
+<body>
+    <main class="wrapper">
+        <header class="align-items-center d-flex header justify-content-between">
+            <div class="align-items-center brand d-flex">
+                <a href="index.html"><img src="images/logo.png" alt=""></a><span class="text">Ki Society</span>
+            </div>
+            <div class="navlink">
+                <ul class="nav">
+                    <li><a href="admin-login.html">(Admin)</a></li>
+                    <li><a href="#">Membership Cards</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="wrap">
+            <div class="ki-box mb-4">
+                <div class="container-xxl px-xxl-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="mb-5 text-uppercase">ORDER MEMBERSHIP CARDS FOR YOUR ORGANIZATION</h2>
+                            <form class="form-ki">
+                                <div class="row mb-3">
+                                    <label for="country" class="col-form-label col-sm-4 text-uppercase">COUNTRY:</label>
+                                    <div class="col-sm-5">
+                                        <select id="country" class="form-select">
+                                        <option selected="">Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="organize" class="col-form-label col-sm-4 text-uppercase">ORGANIZATION:</label>
+                                    <div class="col-sm-5">
+                                        <select id="organize" class="form-select">
+                                            <option selected="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="suborg" class="col-form-label col-sm-4 text-uppercase">SUB ORG:</label>
+                                    <div class="col-sm-5">
+                                        <select id="suborg" class="form-select">
+                                            <option selected="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="ship" class="col-form-label col-sm-4 text-uppercase">SHIP TO:</label>
+                                    <div class="col-sm-5">
+                                        <select id="ship" class="form-select">
+                                            <option selected="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="invoice" class="col-form-label col-sm-4 text-uppercase">INVOICE:</label>
+                                    <div class="col-sm-5">
+                                        <select id="invoice" class="form-select">
+                                            <option selected="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/card.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-ki">
+                <div class="tab-head">
+                    <ul class="nav">
+                        <li data-tab="so">SMALL ORDERS</li>
+                        <li class="active" data-tab="lbo">LARGE BATCH ORDERS</li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="box" data-tab="so" style="display: none;">
+                        <div class="breadlinks mb-4">
+                            <ul class="nav text-uppercase">
+                                <li><a href="#">CARD LIST</a></li>
+                                <li>&gt;</li>
+                                <li><a href="#">ADD CARD</a></li>
+                            </ul>
+                        </div>
+                        <h2>ADD A MEMBERSHIP CARD TO YOUR ORDER</h2>
+                        <p>Use the fields below to add member information, then click “ADD MEMBER” to add to the order.</p>
+                        <p>NOTE: All fields are required.</p>
+                        <form class="form-ki mt-5">
+                            <div class="row mb-3">
+                                <label for="fname" class="col-form-label col-sm-4 col-xl-3 text-uppercase">FIRST NAME</label>
+                                <div class="col-sm-5 col-xl-4">
+                                    <input type="text" class="form-control" id="fname">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="lname" class="col-form-label col-sm-4 col-xl-3 text-uppercase">LAST NAME</label>
+                                <div class="col-sm-5 col-xl-4">
+                                    <input type="text" class="form-control" id="lname">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="mdate" class="col-form-label col-sm-4 col-xl-3 text-uppercase">MEMBERSHIP DATE</label>
+                                <div class="col-sm-5 col-xl-4">
+                                    <input type="date" class="form-control" id="mdate">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="homedojo" class="col-form-label col-sm-4 col-xl-3 text-uppercase">HOME DOJO</label>
+                                <div class="col-sm-5 col-xl-4">
+                                    <select id="homedojo" class="form-select">
+                                        <option selected="">Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="prgram" class="col-form-label col-sm-4 col-xl-3 text-uppercase">PROGRAM</label>
+                                <div class="col-sm-5 col-xl-4">
+                                    <select id="prgram" class="form-select">
+                                        <option selected="">Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="mid" class="col-form-label col-sm-4 col-xl-3 text-uppercase">MEMBER ID</label>
+                                <div class="col-sm-5 col-xl-4">
+                                    <input type="text" class="form-control" id="fname">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="rank" class="col-form-label col-sm-4 col-xl-3 text-uppercase">RANK</label>
+                                <div class="col-sm-5 col-xl-4">
+                                    <select id="rank" class="form-select">
+                                        <option selected="">Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-4 col-xl-3 text-uppercase pt-0">CARD TYPE</legend>
+                                <div class="col-sm-5 col-xl-6">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
+                                        <label class="form-check-label" for="gridRadios1">NEW MEMBER</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                        <label class="form-check-label" for="gridRadios2">REPLACEMENT CARD (Existing Member)</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="cta-row d-flex mt-5">
+                                <button type="reset" class="border-0 cta me-md-3 red text-uppercase">CANCEL</button>
+                                <button type="submit" class="border-0 cta text-uppercase">ADD CARD</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box" data-tab="lbo">
+                        <h2>ORDER A LARGE CARD BATCH FOR AN ENTIRE DOJO OR ORGANIZATION</h2>
+                        <p>To order large amounts of cards for your entire organization or dojo, please use this form to submit a complete list of all members in CSV file format.</p>
+                        <p><strong>NOTE:</strong> Use this downloadable template to format your member information correctly: <a href="#" class="cta d-md-inline-flex py-2 px-4">DOWNLOAD .CSV TEMPLATE</a></p>
+
+                    </div>
+                    <div class="confirmation my-5 text-center">
+                        <h2 class="green">SUCCESS!</h2>
+                        <p>We have received your CSV order form.<br> Please check your email for a confirmation. <br> </p>
+                        <p>dojo-membership-list.csv</p>
+                    </div>
+                    <div class="mt-5 close-card text-center">
+                        <a href="#" class="cta d-inline-flex">CLOSE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-center">&copy;2021 Shinshin Toitsu Aikido All rights reserved.</footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

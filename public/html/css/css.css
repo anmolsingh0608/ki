@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeue-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica-Normal.woff2") format("woff2"), url("../fonts/Helvetica-Normal.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica-Oblique.woff2") format("woff2"), url("../fonts/Helvetica-Oblique.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica-Bold.woff2") format("woff2"), url("../fonts/Helvetica-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica-BoldOblique.woff2") format("woff2"), url("../fonts/Helvetica-BoldOblique.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+.header {
+  padding: 20px;
+  position: relative; }
+  .header:before {
+    background: linear-gradient(135deg, #0a7a42 0%, #50b147 100%);
+    bottom: 0;
+    content: '';
+    height: 5px;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+  .header .brand .text {
+    color: #707070;
+    font: 20px 'Helvetica Neue', sans-serif;
+    margin-left: 5px; }
+  .header .navlink li {
+    color: #0A7A42;
+    font: 20px 'Helvetica Neue', sans-serif;
+    margin-left: 140px; }
+  .header a {
+    color: inherit;
+    text-decoration: none; }
+
+.wrap {
+  padding: 80px; }
+
+h2 {
+  color: #707070;
+  font: bold 25px 'Helvetica Neue', sans-serif; }
+  h2.green {
+    color: #0A7A42; }
+  h2.title {
+    color: #030303;
+    font: 30px 'Helvetica', sans-serif; }
+
+p,
+li {
+  color: #707070;
+  font: 20px 'Helvetica Neue', sans-serif; }
+
+.cta {
+  background: #DAECE9;
+  border-radius: 5px;
+  color: #0A7A42;
+  font: bold 20px 'Helvetica Neue', sans-serif;
+  padding: 10px 50px;
+  text-decoration: none; }
+  .cta.red {
+    background: #DADBDB;
+    color: #FA0505; }
+    .cta.red:hover {
+      color: #FA0505; }
+  .cta:hover {
+    color: #0A7A42; }
+
+.form-ki .col-form-label {
+  color: #707070;
+  font: bold 20px 'Helvetica Neue', sans-serif; }
+.form-ki input,
+.form-ki select {
+  color: #707070;
+  font: 20px 'Helvetica Neue', sans-serif; }
+.form-ki .form-check-input:checked {
+  background-color: #0A7A42;
+  border-color: #0A7A42; }
+.form-ki .form-check .form-check-label {
+  color: #707070;
+  font: 20px 'Helvetica Neue', sans-serif;
+  margin-top: 3px; }
+
+.ki-box-admin .form-ki .col-form-label {
+  color: #303030;
+  font: bold 15px 'Helvetica', sans-serif; }
+
+.tab-ki .tab-head {
+  border-bottom: 1px solid #707070;
+  margin-bottom: 70px; }
+  .tab-ki .tab-head .nav li {
+    flex: 0 0 50%;
+    padding: 10px;
+    color: #707070;
+    font: bold 20px 'Helvetica Neue', sans-serif;
+    text-align: center;
+    cursor: pointer; }
+    .tab-ki .tab-head .nav li.active {
+      background: #F4F4F4; }
+.tab-ki h2 {
+  margin-bottom: 20px; }
+.tab-ki .list-point li {
+  margin-bottom: 10px; }
+
+.ki-admin-wrap {
+  position: relative;
+  display: flex; }
+  .ki-admin-wrap .ki-dashboard {
+    padding: 45px;
+    width: 100%;
+    display: flex; }
+    .ki-admin-wrap .ki-dashboard table tr td {
+      font-size: 12px; }
+    .ki-admin-wrap .ki-dashboard .see-profile a {
+      color: #0D6C01;
+      font: 14px/1 'Helvetica', sans-serif; }
+    .ki-admin-wrap .ki-dashboard p {
+      font-size: 12px; }
+    .ki-admin-wrap .ki-dashboard .cta {
+      font: bold 16px 'Helvetica Neue', sans-serif; }
+
+.ki-sidebar {
+  width: 183px;
+  background: #373B3F; }
+  .ki-sidebar .member-ship a {
+    background-color: #8B9F85;
+    padding: 6px 8px 10px;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none; }
+  .ki-sidebar ul {
+    background: #737971;
+    padding: 18px; }
+    .ki-sidebar ul li {
+      font-size: 13px;
+      margin-bottom: 6px; }
+      .ki-sidebar ul li a {
+        color: #fff;
+        text-decoration: none; }
+
+.add-card {
+  position: relative; }
+  .add-card .cta {
+    position: absolute;
+    top: -10px;
+    right: 0; }
+
+.table-wrap {
+  overflow-x: auto; }
+  .table-wrap table th {
+    border-bottom: 1px solid #707070;
+    color: #707070;
+    font: bold 20px 'Helvetica Neue', sans-serif;
+    padding: 10px; }
+  .table-wrap table td {
+    color: #707070;
+    font: 20px 'Helvetica Neue', sans-serif;
+    padding: 10px; }
+    .table-wrap table td .cta {
+      color: #0A7A42;
+      text-decoration: none;
+      background: #DAECE9;
+      font: 20px 'Helvetica Neue', sans-serif;
+      border-radius: 5px;
+      padding: 10px 15px; }
+      .table-wrap table td .cta.red {
+        background: #ECDADF;
+        color: #FA0505; }
+    .table-wrap table td.cta-table {
+      padding: 0; }
+  .table-wrap table tr:nth-child(odd) {
+    background: #F4F4F4; }
+  .table-wrap table tr:first-child {
+    background: transparent; }
+  .table-wrap table tr table tr {
+    background: transparent !important; }
+    .table-wrap table tr table tr td {
+      padding: 5px; }
+
+.breadlinks ul li {
+  color: #707070;
+  font: 15px 'Helvetica Neue', sans-serif;
+  margin-right: 5px; }
+  .breadlinks ul li a {
+    color: #0A7A42; }
+
+.confirmation p {
+  line-height: 1.5;
+  margin-bottom: 30px; }
+
+.link-row ul li {
+  border-right: 1px solid #303030;
+  color: #0D6C01;
+  font: 12px/1 'Helvetica', sans-serif;
+  margin-right: 15px;
+  padding-right: 15px; }
+  .link-row ul li a {
+    color: inherit; }
+  .link-row ul li:last-child {
+    border-right: 0 none;
+    margin-right: 0;
+    padding-right: 0; }
+
+.user-profile-meta li {
+  color: #1B7400;
+  font: bold 20px 'Helvetica', sans-serif;
+  margin-bottom: 30px; }
+  .user-profile-meta li .name {
+    color: #030303;
+    font: 15px 'Helvetica', sans-serif;
+    flex-basis: 180px; }
+
+.footer {
+  background: #155C4E;
+  padding: 25px 15px;
+  color: #FCF9F9;
+  font: 20px 'Helvetica Neue', sans-serif; }
+
+.wrapper {
+  border: 1px solid #efefef;
+  margin: 0 auto;
+  max-width: 1280px; }
+
+/*# sourceMappingURL=css.css.map */
